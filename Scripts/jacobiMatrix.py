@@ -16,5 +16,5 @@ def createJacobiMatrix(v_str, f_list):
             J[i,j] = sym.diff(fi, s)
     return J
 
-jacobiMatrix = createJacobiMatrix('x1 x2', ['x1**2 + x2 - 11','x1 + x2**2 - 7'])
+jacobiMatrix = createJacobiMatrix('x1 x2', ['2*x1 + 4*x2','4*x1 + 8*x2**3'])
 print(jacobiMatrix)
