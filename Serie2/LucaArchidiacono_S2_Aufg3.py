@@ -9,7 +9,6 @@ f = sp.Matrix([f1, f2, f3])
 X = sp.Matrix([x1,x2,x3])
 Df = f.jacobian(X)
 
-func = sp.lambdify([(x1, x2, x3)], f, "numpy")
 jac = sp.lambdify([(x1, x2, x3)], Df, "numpy")
 v = np.array([1.5, 3, 2.5])
 
